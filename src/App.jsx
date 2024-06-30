@@ -13,6 +13,9 @@ import Patients from './Pages/Auth/Patients'
 import Accueils from './Pages/Auth/Accueils'
 import AddRendezVous from './Pages/Auth/AddRendezVous'
 import AddPatient from './Pages/Auth/AddPatient'
+import AfteraddRdv from './Pages/Auth/AfteraddRdv'
+import ConfirmationAddPatient from './Pages/Auth/ConfirmationAddPatient'
+
 function App() {
 
 
@@ -38,12 +41,24 @@ function App() {
            </Route>
            {/* Add rdv*/}
            <Route path="/addRendezVous" element={<AddRendezVous />}>
+          
 
            </Route>
+
+             {/* After Add rdv*/}
+             <Route path="/afteraddRdv" element={<AfteraddRdv />}>
+
+            </Route>
            {/* Add patient */}
            <Route path="/addPatient" element={<AddPatient />}>
 
            </Route>
+
+             {/*Confirmation add patient */}
+             <Route path="/ConfirmationAddPatient" element={<ConfirmationAddPatient />}>
+
+</Route>
+         
 
            
         
