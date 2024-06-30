@@ -11,6 +11,8 @@ import Inscription from './Pages/Auth/Inscription'
 import Dashboard from './components/Dashboard'
 import Patients from './Pages/Auth/Patients'
 import Accueils from './Pages/Auth/Accueils'
+import AddRendezVous from './Pages/Auth/AddRendezVous'
+import AddPatient from './Pages/Auth/AddPatient'
 function App() {
 
 
@@ -33,8 +35,17 @@ function App() {
            <Route path="/dashboard/mesrendezvous" element={<Mesrendezvous />} />
            <Route path="/dashboard/patients" element={<Patients />} />
            <Route path="/dashboard/moncompte" element={<Moncompte />} />
+           </Route>
+           {/* Add rdv*/}
+           <Route path="/addRendezVous" element={<AddRendezVous />}>
 
            </Route>
+           {/* Add patient */}
+           <Route path="/addPatient" element={<AddPatient />}>
+
+           </Route>
+
+           
         
        
       </Routes>

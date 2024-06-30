@@ -22,14 +22,14 @@ const Sidebar = () => {
         </div>
        <div className='bg-sky-400 flex-1 flex flex-col items-center '>
          <ul>
-         <Link to='/'><li className='flex  items-center gap-4 text-white cursor-pointer'><FaHome className='text-blue-600' />
+         <Link to='/'><li className='flex  items-center gap-4 text-white cursor-pointer text-xl'><FaHome className='text-blue-600' />
                Accueil </li></Link>
-            <Link to='/dashboard/mesrendezvous'><li className='flex items-center gap-4 py-4 text-white cursor-pointer'><FaBell className='text-blue-600'/> Mes rendez-vous</li></Link>
-            <Link to='/dashboard/patients'><li className='flex  items-center gap-4 text-white cursor-pointer'><FaHospitalUser className='text-blue-600' /> Mes patiens</li></Link>
-            <Link to='/dashboard/moncompte'><li className='flex  items-center gap-4 py-4 text-white cursor-pointer'><VscAccount className='text-blue-600'/>Mon compte</li></Link>
+            <Link to='/dashboard/mesrendezvous'><li className='flex items-center gap-4 py-4 text-white cursor-pointer text-xl'><FaBell className='text-blue-600'/> Mes rendez-vous</li></Link>
+            <Link to='/dashboard/patients'><li className='flex  items-center gap-4 text-white cursor-pointer text-xl'><FaHospitalUser className='text-blue-600' /> Mes patients</li></Link>
+            <Link to='/dashboard/moncompte'><li className='flex  items-center gap-4 py-4 text-white cursor-pointer text-xl'><VscAccount className='text-blue-600'/>Mon compte</li></Link>
             <Link to='/connexion'>
                 <li>
-                    <button className='flex items-center py-12 gap-4 text-white cursor-pointer'> <IoMdLogOut className='text-blue-600'/> Déconnection</button>
+                    <button className='flex items-center py-12 gap-4 text-white cursor-pointer text-xl'> <IoMdLogOut className='text-blue-600'/> Déconnection</button>
                 </li>
             </Link>
          </ul>

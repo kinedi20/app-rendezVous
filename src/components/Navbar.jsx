@@ -14,10 +14,10 @@ const Navbar = () => {
               <Link to='/'> Accueil </Link>
               </li>
             <li className='p-8'>
-            <Link to='/mesrendezvous'>Mes rendez-vous </Link>
+            <Link to='/dashboard/mesrendezvous'>Mes rendez-vous </Link>
               </li>
             <li className='p-8'>
-            <Link to='/moncompte'>Mon compte</Link>
+            <Link to='/dashboard/moncompte'>Mon compte</Link>
               </li>
         </ul>
         </nav>

@@ -2,6 +2,7 @@ import React from 'react'
 import TopNav from '../../components/TopNav'
 import { IoAdd } from "react-icons/io5";
 import { FaRegUserCircle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Patients = () => {
   return (
@@ -9,7 +10,7 @@ const Patients = () => {
           <TopNav />
       <div className="flex items-center justify-between my-9">
         <h2 className="text-3xl">Mes patients</h2>
-        <IoAdd className="text-blue-800 text-2xl cursor-pointer" />
+        <Link to='/addPatient'><IoAdd className="text-blue-800 text-2xl cursor-pointer" /></Link>
       </div>
       <table class=" border-slate-400 w-full ...">
       <thead>
