@@ -17,80 +17,48 @@ const AddRendezVous = () => {
           className="w-44 bg-sky-300 rounded-full py-3"
         />
 
-        <div className=" p-2 w-full">
-          <div className="max-w-md mx-auto border-solid border-2 border-gray-600 rounded-lg overflow-hidden">
-            <div className="p-2 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="text-gray-600">Titre Rendez-vous</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <form action="" className="max-w-md mx-auto ">
+          <input
+            type="text"
+            placeholder="Titre Rendez-vous"
+            className="w-full  border-solid border-2 border-gray-600 rounded-lg max-w-md mx-auto px-7 h-12 m-2 "
+          />
 
-        <div className=" p-2 w-full">
-          <div className="max-w-md mx-auto border-solid border-2 border-gray-600 rounded-lg overflow-hidden">
-            <div className="p-2 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="text-gray-600">AVEC QUI ?</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <input
+            type="text"
+            placeholder="Avec qui ?"
+            className="w-full  border-solid border-2 border-gray-600 rounded-lg max-w-md mx-auto px-7 h-12 m-2 "
+          />
 
-        <div className=" p-2 w-full">
-          <div className="max-w-md mx-auto border-solid border-2 border-gray-600 rounded-lg overflow-hidden">
-            <div className="p-2 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="text-gray-600">Date de Rendez-vous</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <input
+            type="text"
+            placeholder="Date rendez-vous"
+            className="w-full  border-solid border-2 border-gray-600 rounded-lg max-w-md mx-auto px-7 h-12 m-2"
+          />
 
-        <div className=" p-2 w-full">
-          <div className="max-w-md mx-auto border-solid border-2 border-gray-600 rounded-lg overflow-hidden">
-            <div className="p-2 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="text-gray-600">Heure de Rendez-vous</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <input
+            type="text"
+            placeholder="Heure de rendez-vous"
+            className="w-full  border-solid border-2 border-gray-600 rounded-lg max-w-md mx-auto px-7 h-12 m-2"
+          />
 
-        <div className=" p-2 w-full">
-          <div className="max-w-md mx-auto border-solid border-2 border-gray-600 rounded-lg overflow-hidden">
-            <div className="p-2 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="text-gray-600">Lieu de Rendez-vous </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <input
+            type="text"
+            placeholder="Lieu rendez-vous"
+            className="w-full  border-solid border-2 border-gray-600 rounded-lg max-w-md mx-auto px-7 h-12 m-2"
+          />
 
-        <div className=" p-2 w-full">
-          <div className="max-w-md mx-auto border-none rounded-lg">
-            <Link to="/afteraddRdv">
-              <button
-                className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg
+          <Link to="/afteraddRdv">
+            <button
+              className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg
 border-blue-600
 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
-active:border-b-[2px] active:brightness-90 active:translate-y-[2px] w-full"
-              >
-                Valider
-              </button>
-            </Link>
-          </div>
-        </div>
+active:border-b-[2px] active:brightness-90 active:translate-y-[2px] w-full "
+            >
+              Valider
+            </button>
+          </Link>
+        </form>
       </div>
       <div className="w-1/4 h-screen ">
         <div
