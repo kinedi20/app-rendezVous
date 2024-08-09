@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
@@ -16,9 +16,11 @@ import AddPatient from './Pages/Auth/AddPatient'
 import AfteraddRdv from './Pages/Auth/AfteraddRdv'
 import ConfirmationAddPatient from './Pages/Auth/ConfirmationAddPatient'
 
+
+
 function App() {
 
-
+ 
   return (
     <>
     <BrowserRouter>
@@ -56,6 +58,9 @@ function App() {
 
              {/*Confirmation add patient */}
              <Route path="/ConfirmationAddPatient" element={<ConfirmationAddPatient />}>
+
+
+            
 
 </Route>
          

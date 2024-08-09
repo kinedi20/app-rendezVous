@@ -1,9 +1,11 @@
 import React from "react";
 import UserPatient from "../../../src/assets/UserPatient.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { LuPencilLine } from "react-icons/lu";
 
 const ConfirmationAddPatient = () => {
+  const { state } = useLocation();
+  console.log("state", state);
   return (
     <div className="flex">
       <div className="w-1/4 h-screen relative top-20 ">
@@ -20,52 +22,54 @@ const ConfirmationAddPatient = () => {
         <div className=" p-2 w-full">
           <div className="max-w-md mx-auto border-solid border-2 border-gray-600 rounded-lg overflow-hidden py-10">
             <div className="p-3 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="font-semibold text-gray-700">Prénom:</span>
-                  <span class="text-gray-600">Pathé</span>
+              <div>
+                <div className="flex  gap-4">
+                  <span className="font-semibold text-gray-700">
+                    Prénom : 
+                  </span>
+                  <span className="text-gray-600">{state.patient.prenom}</span>
                 </div>
-                <LuPencilLine />
               </div>
             </div>
 
             <div className="p-3 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="font-semibold text-gray-700">Nom:</span>
-                  <span class="text-gray-600">Fall</span>
+              <div >
+                <div className="flex  gap-4">
+                  <span className="font-semibold text-gray-700">Nom:</span>
+                  <span className="text-gray-600">{state.patient.nom}</span>
                 </div>
-                <LuPencilLine />
+                
               </div>
             </div>
 
             <div className="p-3 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="font-semibold text-gray-700">Age:</span>
-                  <span class="text-gray-600">22 ans</span>
+              <div>
+                <div className="flex  gap-4">
+                  <span className="font-semibold text-gray-700">Age:</span>
+                  <span className="text-gray-600">{state.patient.age}</span>
                 </div>
-                <LuPencilLine />
+                
               </div>
             </div>
 
             <div className="p-3 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="font-semibold text-gray-700">Adresse:</span>
-                  <span class="text-gray-600">Cité Senghor</span>
+              <div >
+                <div className="flex  gap-4">
+                  <span className="font-semibold text-gray-700">Adresse:</span>
+                  <span className="text-gray-600">{state.patient.adresse}</span>
                 </div>
-                <LuPencilLine />
+                
               </div>
             </div>
 
             <div className="p-3 mx-5">
-              <div className="flex justify-between items-center">
-                <div>
-                  <span class="font-semibold text-gray-700">Téléphone</span>
-                  <span class="text-gray-600">+221 77 000 00 00</span>
+              <div >
+                <div className="flex  gap-4">
+                  <span className="font-semibold text-gray-700">Téléphone : </span>
+                  <span className="text-gray-600">
+                    {state.patient.telephone}
+                  </span>
                 </div>
-                <LuPencilLine />
               </div>
             </div>
           </div>
@@ -79,7 +83,7 @@ border-blue-600
 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] w-full"
                 >
-                  Enregistrer
+                  Retour à la liste des patients
                 </button>
               </Link>
             </div>
